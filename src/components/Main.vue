@@ -1,10 +1,12 @@
 <template>
   <div class="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <b-container class="header">
+      <div class="header container">
         <a class="navbar-brand" href="/">憶</a>
-        <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-        <b-collapse is-nav id="nav_collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <router-link target="_self" class="nav-link" :to="{ name: 'Index' }" exact>首页</router-link>
@@ -19,8 +21,8 @@
               <router-link target="_self" class="nav-link" :to="{ name: 'Web' }">WEB</router-link>
             </li>
           </ul>
-        </b-collapse>
-      </b-container>
+        </div>
+      </div>
     </nav>
     <router-view class="center"></router-view>
     <div class="footer">

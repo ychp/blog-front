@@ -1,6 +1,10 @@
+import pagination from '../../common/pagination/view.vue'
 
 export default {
   name: 'article',
+  components: {
+    pagination
+  },
   props: {
     navTitle: {
       type: String
@@ -13,7 +17,7 @@ export default {
     return {
       currentPage: 1,
       articles: [],
-      pages: 10,
+      pages: 20,
       keyword: ''
     }
   },

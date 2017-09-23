@@ -1,15 +1,15 @@
 <template> 
   <div class="container">
-    <b-container>
-      <b-row>
-        <b-col cols="9">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-9">
           <myArticle navTitle="最新" dataSouce="index"></myArticle>
-        </b-col>
-        <b-col cols="3">
+        </div>
+        <div class="col col-lg-3">
           <myPopular></myPopular>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </div>
 </template>  
 <script>
