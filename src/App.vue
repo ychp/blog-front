@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="less">
-html {
+* {
   padding: 0px;
   margin: 0px;
 }
@@ -21,8 +21,6 @@ body {
   height: 100%;
   font-family: "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, Verdana, Tahoma, sans-serif;
   color: #555;
-  padding: 0px;
-  margin: 0px;
 }
 
 .slids-fade-enter-active {

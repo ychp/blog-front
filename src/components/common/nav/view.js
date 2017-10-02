@@ -31,5 +31,17 @@ export default {
   created () {
     var route = this.$route
     this.currentPath = route.path
+  },
+  methods: {
+    toggleNav (obj) {
+      var currentUl = obj.currentTarget.parentNode
+      var classes = currentUl.className
+      if (classes.indexOf('close') > -1) {
+        classes = classes.replace(' close', '')
+      } else {
+        classes = classes.concat(' close')
+      }
+      currentUl.setAttribute('class', classes)
+    }
   }
 }

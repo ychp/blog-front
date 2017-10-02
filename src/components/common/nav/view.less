@@ -2,6 +2,12 @@
   height: 50px;
   border-bottom: 0.5px solid #D1CDCD;
   .nav-content {
+    @media (min-width: 600px) {
+      width: 500px;
+    }
+    @media (min-width: 800px) {
+      width: 700px;
+    }
     @media (min-width: 1000px) {
       width: 900px;
     }
@@ -22,6 +28,17 @@
       }
     }
     .nav-items {
+      @media (min-width: 0px) {
+        float: right;
+        margin-right: 15px;
+      }
+      @media (min-width: 600px) {
+        width: 450px;
+        margin-right: 0px;
+      }
+      @media (min-width: 800px) {
+        width: 650px;
+      }
       @media (min-width: 1000px) {
         width: 850px;
       }
@@ -29,13 +46,24 @@
         width: 950px;
       }
       float: left;
-      margin: 0px;
-      padding: 0px;
       text-align: center;
       line-height: 50px;
       .nav-item {
-        margin-right: 50px;
-        display: inline;
+        @media (min-width: 0px) {
+          display: none;
+        }
+        @media (min-width: 600px) {
+          margin-right: 30px;
+          display: inline;
+        }
+        @media (min-width: 800px) {
+          margin-right: 40px;
+          display: inline;
+        }
+        @media (min-width: 1000px) {
+          margin-right: 50px;
+          display: inline;
+        }
         .nav-link {
           text-decoration: none;
           color: #000;
@@ -45,6 +73,47 @@
           color: #43A1D4;
         }
       }
+
+      .small-nav {
+        @media (min-width: 600px) {
+          display: none;
+        }
+        width: 40px;
+        height: 30px;
+        background-color: white;
+        border-width: 0px;
+        outline: none;
+      }
+      .small-nav:hover,.small-nav-close:hover {
+        cursor: pointer;
+      }
+      .small-nav-close {
+        display: none;
+      }
     }
-  } 
+
+    .close {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      text-align: right;
+      @media (min-width: 0px) {
+        .small-nav {
+          display: none;
+        }
+        .small-nav-close {
+          display: inline;
+          margin-right: 15px;
+        }
+        .nav-item {
+          text-align: center;
+          display: block;
+          width: 100%;
+          background-color: #fff;
+        }
+      }
+    }
+    
+  }
 }
