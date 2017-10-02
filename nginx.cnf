@@ -1,0 +1,17 @@
+server {
+  listen 80;
+  server_name blog.yingchengpeng.com;
+
+	location /static/ {
+		root /root/projects/blog-new/dist;
+	}
+
+	location /index.html {
+		root /root/projects/blog-new/dist;
+		index index.html index.htm;
+	}
+
+	location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
