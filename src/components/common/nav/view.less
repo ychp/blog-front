@@ -1,0 +1,50 @@
+.nav {
+  height: 50px;
+  border-bottom: 0.5px solid #D1CDCD;
+  .nav-content {
+    @media (min-width: 1000px) {
+      width: 900px;
+    }
+    @media (min-width: 1200px) {
+      width: 1000px;
+    }
+    margin: auto; 
+    .nav-brand {
+      float: left;
+      width: 50px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50px;
+      font-size: 24px;
+      a {
+        text-decoration: none;
+        color: #4EB6F1;
+      }
+    }
+    .nav-items {
+      @media (min-width: 1000px) {
+        width: 850px;
+      }
+      @media (min-width: 1200px) {
+        width: 950px;
+      }
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      line-height: 50px;
+      .nav-item {
+        margin-right: 50px;
+        display: inline;
+        .nav-link {
+          text-decoration: none;
+          color: #000;
+          font-family: 'Baloo Bhaijaan';
+        }
+        .active {
+          color: #43A1D4;
+        }
+      }
+    }
+  } 
+}
