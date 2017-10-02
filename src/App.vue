@@ -16,6 +16,10 @@ export default {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   height: 100%;
