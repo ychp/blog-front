@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from '@/components/main/view.vue'
 import Index from '@/components/index/view.vue'
 import Blog from '@/components/blog/view.vue'
+import Profile from '@/components/profile/view.vue'
 import NotFound from '@/components/error/404'
 
 Vue.use(Router)
@@ -31,7 +32,7 @@ const routers = [
   {
     path: '/profile',
     name: 'Profile',
-    component: Blog
+    component: Profile
   }
 ]
 

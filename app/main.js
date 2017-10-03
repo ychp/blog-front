@@ -10,6 +10,8 @@ Vue.config.productionTip = false
 Vue.filter('dateCn', filters.dateCn)
 Vue.filter('dateSlash', filters.dateSlash)
 
+Vue.use(require('vue-resource'))
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
