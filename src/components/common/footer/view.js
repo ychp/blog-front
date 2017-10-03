@@ -10,8 +10,12 @@ export default {
           url: 'https://cn.vuejs.org/'
         },
         {
-          name: 'Bootstrap',
-          url: 'http://www.bootcss.com/s'
+          name: 'Iconfont',
+          url: 'http://iconfont.cn/'
+        },
+        {
+          name: 'Fangluyu',
+          url: 'http://fangluyu.cn/'
         }
       ]
     }
