@@ -12,16 +12,7 @@
     </div>
   </div>
 </template>  
-<script>
-import myArticle from './article/list/view.vue'
-import myPopular from './article/popular/view.vue'
-export default {
-  components: {
-    myArticle,
-    myPopular
-  }
-}
-</script>
+<script src='./view.js'></script>
 
 <style lang="less" scoped>
 </style>

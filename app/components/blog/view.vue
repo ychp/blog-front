@@ -9,18 +9,9 @@
       </div>
     </div>
   </div>
-</template>  
-<script>
-import myArticle from './list/view.vue'
-import myPopular from './popular/view.vue'
-export default {
-  components: {
-    myArticle,
-    myPopular
-  }
-}
-</script>
+</template>
 
+<script src='./view.js'></script>
 <style lang='less' scoped>
-@import '../global/table.less';
+@import './view.less';
 </style>
