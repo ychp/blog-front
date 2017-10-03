@@ -6,7 +6,7 @@
                     忆
                 </router-link>
             </div>
-            <ul class="nav-items close">
+            <ul class="nav-items">
                 <i class="iconfont icon-liebiao2 small-nav" v-on:click="toggleNav($event)"></i>
                 <i class="iconfont icon-31guanbi small-nav-close" v-on:click="toggleNav($event)"></i>
                 <li class="nav-item" v-for="(menu, index) in menus">
