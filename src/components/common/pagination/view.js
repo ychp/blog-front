@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     gotoPage (pageNo) {
-      return this.linkGen(pageNo)
+      window.location.href = this.linkGen(pageNo)
     }
   }
 }

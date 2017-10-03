@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="container mode-link">
+        <div class="mode-link">
         <h3 class="t-h3">友情链接</h3>
         <ul class="list-inline">
             <li v-for="link in inlineLinks">
@@ -8,7 +8,7 @@
             </li>
         </ul>
         </div>
-        <div class="container copy">
+        <div class="copy">
         <p class="copyright">Copyright © 2017. Ychp</p>
         </div>
     </div>

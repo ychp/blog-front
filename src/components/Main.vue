@@ -46,5 +46,4 @@ export default {
   min-height: 400px;
   padding-top: 20px;
 }
-
 </style>

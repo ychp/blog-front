@@ -1,13 +1,11 @@
 <template> 
   <div class="container">
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-9">
-          <myArticle navTitle="博客" dataSouce="blogs"></myArticle>
-        </div>
-        <div class="col col-lg-3">
-          <myPopular></myPopular>
-        </div>
+    <div class="row">
+      <div class="col">
+        <myArticle navTitle="博客" dataSouce="blogs"></myArticle>
+      </div>
+      <div class="col col-lg-3">
+        <myPopular></myPopular>
       </div>
     </div>
   </div>
@@ -23,8 +21,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
-.container-fluid {
-  padding-top: 20px;
-}
+<style lang='less' scoped>
+@import '../global/table.less';
 </style>

@@ -1,13 +1,15 @@
 <template>
   <div class="articles">
-    <div toggleable="md" type="secondary" variant="faded" class="article-nav">
+    <div class="article-nav">
         <div class="title">
-          <span class='nav-link'>{{ navTitle }}</span>
+          <span class='text'>{{ navTitle }}</span>
         </div>
     </div>
     <div class="content" v-for="article in articles">
-      <div class="date" >{{ article.createAt | dateCn }}</div>
-      <div class="title">{{ article.title }}</div>
+      <div class="row">
+        <div class="col title text-left">{{ article.title }}</div>
+        <div class="col date text-right" >{{ article.createAt | dateCn }}</div>
+      </div>
       <div class="description">{{ article.desc }}</div>
       <div class="summary"><span>阅读{{ article.reads }}</span></div>
     </div>

@@ -10,16 +10,13 @@
         <div class="col title">
           {{ article.title }}
         </div>
-        <div class="col col-lg-7 summary text-right">
-          <span>阅读{{ article.reads }}</span>
-        </div>
       </div>
       <div class="row bottom">
-        <div class="col col-lg-7 date text-left">
+        <div class="col date text-left">
           {{ article.createAt | dateSlash }}
         </div>
-        <div class="col text-right">
-          更多
+        <div class="col summary text-right">
+          <span>阅读{{ article.reads }}</span>
         </div>
       </div>
     </div>

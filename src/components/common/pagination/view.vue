@@ -1,26 +1,39 @@
 <template>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-nav justify-content-center">
-            <li class="page-item" v-bind:class="{ disabled: currentPage == 1 }">
-                <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-                </a>
+    <div class="pagination">
+        <ul class="pagination-nav justify-content-center">
+            <li class="page-item pre" v-bind:class="{ disabled: currentPage == 1 }">
+                <button class="page-link" 
+                    @click="gotoPage(currentPage <= 1 ? 1: currentPage - 1)"
+                    :disabled="currentPage <= 1"
+                >
+                    <span>&laquo;</span>
+                </button>
             </li>
             <li class="page-item" 
-                v-for="i in indexs" 
-                v-bind:class="{ disabled: i < 1, active: i == currentPage }"
+                v-for="(i, index) in indexs" 
+                v-bind:class="{  disabled: i == currentPage || i < 1 , active: i == currentPage, last: index == indexs.length - 1 }"
             >
-                <a class="page-link" :href="gotoPage(i)" >{{ i < 1 ? "..." : i }}</a>
+                <button 
+                    class="page-link" 
+                    @click="gotoPage(i)" 
+                    :disabled="i < 1 || i == currentPage">
+                    <span>{{ i < 1 ? "..." : i }}</span>
+                </button>
             </li>
-            <li class="page-item" v-bind:class="{ disabled: currentPage == pages }">
-                <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-                </a>
+            <li class="page-item next" 
+                v-bind:class="{ disabled: currentPage == pages }"
+                
+            >
+                <button 
+                    class="page-link"
+                    @click="gotoPage(currentPage >= pages ? pages: currentPage + 1)"
+                    :disabled="currentPage >= pages"
+                >
+                    <span>&raquo;</span>
+                </button>
             </li>
         </ul>
-    </nav>
+    </div>
 </template>
 <script src='./view.js'></script>
 <style lang='less' scoped>
