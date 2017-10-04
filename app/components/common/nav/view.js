@@ -20,10 +20,6 @@ export default {
         {
           title: 'WEB',
           url: '/web'
-        },
-        {
-          title: '简介',
-          url: '/profile'
         }
       ]
     }
