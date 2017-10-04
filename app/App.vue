@@ -31,6 +31,8 @@ export default {
 }
 
 .container {
+  margin: auto;
+  margin-top: 15px;
   @media (min-width: 0px) {
     width: 95%;
     max-width: 500px;
@@ -57,7 +59,6 @@ export default {
   @media (min-width: 1200px) {
     width: 1000px;
   }
-  margin: auto;
 }
 
 a {

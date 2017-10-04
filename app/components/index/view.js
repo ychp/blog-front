@@ -1,5 +1,6 @@
 require('swiper/dist/css/swiper.css')
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import card from '@/components/article/list-card/view.vue'
 
 export default {
   name: 'index',
@@ -24,6 +25,7 @@ export default {
   },
   components: {
     swiper,
-    swiperSlide
+    swiperSlide,
+    card
   }
 }

@@ -1,0 +1,58 @@
+@import '../../global/base.less';
+@import '../../global/table.less';
+.card {
+  border: 1px solid #999999;
+  border-radius: .25rem;
+  .card-title {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(217, 217, 217);
+    .row {
+      width: 100%;
+      margin: auto;
+      .col {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    .text {
+      display: block;
+    }
+    .more:hover {
+      font-size: 1.1em;
+    }
+  }
+  .items {
+    .item {
+      width: 100%;
+      margin: auto;
+      padding: 0.5rem;
+      border-bottom: 1px dashed #999999;
+      div {
+        padding: 0px;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      .date {
+        color: #717171;
+        font-size: 12px;
+      }
+    }
+    .last {
+      border: 0px;
+    }
+    .item:hover {
+      background-color: #43A1D4;
+      cursor: pointer;
+      div {
+        color: #fff;
+      }
+    }
+  }
+}
