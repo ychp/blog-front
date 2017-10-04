@@ -16,6 +16,16 @@
     height: 100%;
   }
   .cards {
-    margin-top: 15px;
+    div {
+      @media (min-width: 0px) {
+        margin-top: 10px;
+      }
+      margin-top: 15px;
+    }
+    div .blog {
+      @media (min-width: 0px) {
+        padding-right: 3px;
+      }
+    }
   }
 }

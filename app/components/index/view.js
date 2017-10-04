@@ -17,7 +17,8 @@ export default {
         preloadImages: false,
         lazyLoading: true,
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
+        autoplay: 3000,
         loop: true,
         mousewheelControl: true
       }

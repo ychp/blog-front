@@ -7,8 +7,8 @@
       <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
     </swiper>
     <div class="row cards">
-      <div class="col col-lg-5" style="padding-right: 5px;"><card title="博客"></card></div>
-      <div class="col" style="padding-left: 5px;"><card title="资讯"></card></div>
+      <div class="col col-lg-5 blog"><card title="博客"></card></div>
+      <div class="col news"><card title="资讯"></card></div>
     </div>
   </div>
 </template>  
