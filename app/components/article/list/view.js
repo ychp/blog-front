@@ -104,7 +104,7 @@ export default {
       ]
     },
     paging (pageNo) {
-      var baseUrl = this.dataSouce === 'index' ? '/' : '/blogs'
+      var baseUrl = this.dataSouce === 'index' ? '/' : '/' + this.dataSouce
       return baseUrl + '?keyword=' + this.keyword + '&pageNo=' + pageNo
     }
   }

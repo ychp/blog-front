@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Main from '@/components/main/view.vue'
 import Index from '@/components/index/view.vue'
 import Blog from '@/components/blog/view.vue'
+import WEB from '@/components/web/view.vue'
+import News from '@/components/news/view.vue'
 import Profile from '@/components/profile/view.vue'
 import NotFound from '@/components/error/404'
 
@@ -22,12 +24,12 @@ const routers = [
   {
     path: '/news',
     name: 'News',
-    component: Blog
+    component: News
   },
   {
     path: '/web',
     name: 'Web',
-    component: Blog
+    component: WEB
   },
   {
     path: '/profile',

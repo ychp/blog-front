@@ -1,6 +1,6 @@
 <template> 
   <div class="container">
-    <myArticle navTitle="博客" dataSouce="blogs"></myArticle>
+    <myArticle navTitle="WEB" dataSouce="articles"></myArticle>
   </div>
 </template>
 
