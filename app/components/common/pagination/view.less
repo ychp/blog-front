@@ -7,16 +7,6 @@
     padding-left: 0;
     list-style: none;
     border-radius: .25rem;
-    .first .page-link {
-      margin-left: 0;
-      border-top-left-radius: .25rem;
-      border-bottom-left-radius: .25rem;
-    }
-    .last .page-link {
-      margin-right: 0;
-      border-top-right-radius: .25rem;
-      border-bottom-right-radius: .25rem;
-    }
     .page-item {
       display: inline;
       .page-link {
@@ -33,6 +23,24 @@
       .page-link:hover {
         cursor: pointer;
       }
+    }
+    @media (min-width: 350px) {
+      .pre, .next {
+        display: none;
+      }
+    }
+    .first .page-link {
+      margin-left: 0;
+      border-top-left-radius: .25rem;
+      border-bottom-left-radius: .25rem;
+    }
+    .last .page-link {
+      margin-right: 0;
+      border-top-right-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+    }
+    .first .page-link, .last .page-link, .pre .page-link, .next .page-link {
+      padding: 5.5px 7.5px;
     }
     .active {
       .page-link {

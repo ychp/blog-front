@@ -14,7 +14,7 @@
                     @click="gotoPage(currentPage <= 1 ? 1: currentPage - 1)"
                     :disabled="currentPage <= 1"
                 >
-                    <span>&laquo;</span>
+                    <i class="iconfont icon-shangyiye"></i>
                 </button>
             </li>
             <li class="page-item" 
@@ -28,7 +28,7 @@
                     <span>{{ i < 1 ? "..." : i }}</span>
                 </button>
             </li>
-            <li class="page-item" 
+            <li class="page-item next" 
                 v-bind:class="{ disabled: currentPage == pages }"
                 
             >
@@ -37,7 +37,7 @@
                     @click="gotoPage(currentPage >= pages ? pages: currentPage + 1)"
                     :disabled="currentPage >= pages"
                 >
-                    <span>&raquo;</span>
+                    <i class="iconfont icon-xiayiye"></i>
                 </button>
             </li>
             <li class="page-item last" 
