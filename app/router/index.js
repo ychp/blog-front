@@ -5,7 +5,7 @@ import Index from '@/components/index/view.vue'
 import Blog from '@/components/blog/view.vue'
 import WEB from '@/components/web/view.vue'
 import News from '@/components/news/view.vue'
-import Profile from '@/components/profile/view.vue'
+import Detail from '@/components/article/detail/view.vue'
 import NotFound from '@/components/error/404'
 
 Vue.use(Router)
@@ -32,9 +32,9 @@ const routers = [
     component: WEB
   },
   {
-    path: '/profile',
-    name: 'Profile',
-    component: Profile
+    path: '/detail',
+    name: 'Detail',
+    component: Detail
   }
 ]
 

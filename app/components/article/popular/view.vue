@@ -16,7 +16,7 @@
           {{ article.createAt | dateSlash }}
         </div>
         <div class="col summary text-right">
-          <span>阅读{{ article.reads }}</span>
+          <i class="iconfont icon-browse" style=""><span>{{ article.reads }}</span></i>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
         <div class="col date text-right" >{{ article.createAt | dateCn }}</div>
       </div>
       <div class="description">{{ article.desc }}</div>
-      <div class="summary"><i class="iconfont icon-browse" style=""><span>{{ article.reads }}</span></i></div>
+      <div class="summary"><span>阅读{{ article.reads }}</span></div>
     </div>
     <pagination v-bind:current-page="currentPage" v-bind:pages="pages" v-bind:link-gen="paging"></pagination>
   </div>
