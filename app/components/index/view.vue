@@ -8,7 +8,7 @@
     </swiper>
     <div class="row cards">
       <div class="col col-lg-5 blog"><card title="博客"></card></div>
-      <div class="col news"><card title="资讯"></card></div>
+      <div class="col news"><card title="资讯" linkUrl="/news"></card></div>
     </div>
   </div>
 </template>  
